@@ -21,7 +21,7 @@ class PrettyPrintCallbackHandler(BaseCallbackHandler):
 
     def on_llm_new_token(self, token: str, **kwargs: Any) -> Any:
         """Run on new LLM token. Only available when streaming is enabled."""
-        print(f"[llm][new_token] {token}")
+        #print(f"[llm][new_token] {token}")
 
     def on_llm_end(self, response: LLMResult, **kwargs: Any) -> Any:
         """Run when LLM ends running."""
