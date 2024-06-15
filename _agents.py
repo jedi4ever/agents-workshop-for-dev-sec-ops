@@ -8,6 +8,9 @@ def get_agent_by_name(name, llm):
     elif name == 'senior devops':
         print("Creating senior devops")
         return senior_devops(llm)
+    elif name == 'security expert':
+        print("Creating security expert")
+        return security_expert(llm)       
     else:
         return None
 
@@ -17,7 +20,8 @@ def senior_developer(llm):
         goal='Develop code that is high quality, scalable, and maintainable.',
         backstory="""You have more then with 10 years of experience. 
         You have worked on a variety of projects and have a deep understanding of software development best practices. 
-        You are passionate about writing clean, efficient code and am always looking for ways to improve my skills.
+        You are passionate about writing clean, efficient code and are always looking for ways to improve your skills.
+        You focus on writing the simplest code that solves the problem and is easy to maintain.
         """,
         verbose=True,
         # You can pass an optional llm attribute specifying what model you wanna use.
@@ -28,9 +32,23 @@ def senior_developer(llm):
 def senior_devops(llm):
     return Agent(
         role='Senior DevOps Engineer',
-        goal='Make sure the code works repeatably and is idempotent.',
+        goal='Make sure the code works reliable.',
         backstory="""You are have more then 10 years of experience.
         You write a lot of bash scripts as you live in the terminal all day.`
+        """,
+        verbose=True,
+        llm=llm
+        # You can pass an optional llm attribute specifying what model you wanna use.
+        # llm=ChatOpenAI(model_name="gpt-3.5", temperature=0.7),
+    )
+
+def security_expert(llm):
+    return Agent(
+        role='Security Expert',
+        goal='Make sure the code works secure',
+        backstory="""You are have more then 10 years of experience.
+        You review a lot of bash scripts and know much about application security.
+        Especially you are an expert in shell script
         """,
         verbose=True,
         llm=llm
