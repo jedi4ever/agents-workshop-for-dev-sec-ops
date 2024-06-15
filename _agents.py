@@ -1,3 +1,4 @@
+# WARNING: When changing something here , make sure you restart the notebook kernel
 from crewai import Agent
 
 def get_agent_by_name(name, llm):

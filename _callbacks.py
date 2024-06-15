@@ -1,10 +1,10 @@
+# WARNING: When changing something here , make sure you restart the notebook kernel
 from uuid import UUID
 
 from typing import Any, Dict, List, Optional, Sequence, Union
 from langchain.schema import AgentAction, BaseMessage, LLMResult, AgentFinish
 from langchain.callbacks.base import BaseCallbackHandler
 from langchain.schema.document import Document
-
 
 class PrettyPrintCallbackHandler(BaseCallbackHandler):
     """Base callback handler that can be used to handle callbacks from langchain."""

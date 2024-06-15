@@ -1,3 +1,4 @@
+# WARNING: When changing something here , make sure you restart the notebook kernel
 from langchain_openai import OpenAI, ChatOpenAI
 from langchain_community.chat_models.ollama import ChatOllama
 

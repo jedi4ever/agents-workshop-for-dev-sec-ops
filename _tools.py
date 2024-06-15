@@ -1,3 +1,5 @@
+# WARNING: When changing something here , make sure you restart the notebook kernel
+
 import tempfile
 import subprocess
 import os
