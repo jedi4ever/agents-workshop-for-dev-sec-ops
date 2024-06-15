@@ -1,7 +1,4 @@
-# A peek under the hood of Agents - With some Dev,Sec,Ops examples
-
-## Status
-Work in Progress ...
+# Learning about Agents - With some Dev,Sec,Ops examples
 
 ## Outline
 
