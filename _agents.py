@@ -10,7 +10,10 @@ def get_agent_by_name(name, llm):
         return senior_devops(llm)
     elif name == 'security expert':
         print("Creating security expert")
-        return security_expert(llm)       
+        return security_expert(llm)  
+    elif name == 'data engineer':
+        print("Creating data engineer")
+        return data_engineer(llm)     
     else:
         return None
 
@@ -54,4 +57,14 @@ def security_expert(llm):
         llm=llm
         # You can pass an optional llm attribute specifying what model you wanna use.
         # llm=ChatOpenAI(model_name="gpt-3.5", temperature=0.7),
+    )
+
+def data_engineer(llm):
+    return Agent(
+        role='Data Engineer',
+        goal='Extract the request data from the text.',
+        backstory="""You are very good at extracting data from text.""",
+        verbose=True,
+        llm=llm
+        # You can pass an optional
     )
