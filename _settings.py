@@ -6,6 +6,10 @@
 CHALLENGE_PROMPT="""Write me a shell script to list the files in the current directory. 
 Output the script as markdown code block"""
 
+CHALLENGE_PROMPT="""Write me a shell script that finds out how much memory is being used by each process on the system. 
+Output the script as markdown code block"""
+
+
 MODEL_PROVIDER="openai"
 MODEL_NAME="gpt-4"
 

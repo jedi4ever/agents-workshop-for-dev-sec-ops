@@ -7,31 +7,18 @@ def get_llm(name, callbacks=[]):
     openai_llm = ChatOpenAI(
         model="gpt-4",
         temperature=0,
-        max_tokens=None,
-        timeout=None,
-        max_retries=2,
         callbacks=callbacks,
         streaming=False
-        # api_key="...",  # if you prefer to pass api key in directly instaed of using env vars
-        # base_url="...",
-        # organization="...",
-        # other params...
     )
 
     #if name == "ollama":
     ollama_llm = ChatOllama(
         model="llama3",
         temperature=0,
-        max_tokens=None,
-        timeout=None,
-        max_retries=2,
-        callbacks=callbacks
-
-        # api_key="...",  # if you prefer to pass api key in directly instaed of using env vars
-        # base_url="...",
-        # organization="...",
-        # other params...
+        callbacks=callbacks,
+        streaming=False
     )
 
+    llm = ollama_llm
     llm = openai_llm
     return llm
