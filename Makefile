@@ -1,0 +1,2 @@
+ollama:
+	OLLAMA_MAX_LOADED_MODELS=4 OLLAMA_NUM_PARALLEL=12 ollama serve
