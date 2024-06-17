@@ -11,8 +11,12 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
+	"waitFor": "onCreateCommand",
+	// We run the updateContentCommand to install the required packages
+	// So they get cached by the prebuild step of github codespaces
+	"updateContentCommand": "python3 -m pip install -r requirements.txt",
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip3 install --user -r requirements.txt",
+	"postCreateCommand": "",
 
 	// Configure tool-specific properties.
 	"customizations": {
