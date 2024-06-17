@@ -1,2 +1,10 @@
 ipykernel
 jupyterlab
+
+# We also add the used libraries here, while not strictly needed
+# But it will speed up the first runs of the notebook
+langchain
+langchain-openai
+langchain-community
+langgraph
+crewai
