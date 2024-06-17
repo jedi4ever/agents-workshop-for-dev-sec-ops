@@ -26,7 +26,10 @@
           "ms-python.python"
         ],
 		"settings": {
-				"python.defaultInterpreterPath": "/usr/local/bin/python3"
+				"python.defaultInterpreterPath": "/usr/local/bin/python3",
+				"editor.semanticHighlighting.enabled": true,    
+				"python.languageServer": "Pylance"
+
 		}
       }
 	},
