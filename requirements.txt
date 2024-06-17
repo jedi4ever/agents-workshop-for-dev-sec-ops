@@ -1,8 +1,2 @@
-python-dotenv
-langchain
-langchain-openai
-langchain-community
-crewai
-langgraph
 ipykernel
 jupyterlab
