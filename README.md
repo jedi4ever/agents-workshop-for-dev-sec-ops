@@ -22,4 +22,8 @@ We'll be asking agents powered by LLMs to create bash script.
 
 ## GitHub CodeSpaces
 
-To keep things as simple as possible you can run this workshop in GitHub CodeSpaces.  Simply hit the `.` key and a new codespace will open. The CodeSpace will be an embedded VSCode with Jupyter Notebook pre-configured and ready to go.
+To keep things as simple as possible you can run this workshop in GitHub CodeSpaces.  Simply hit the `Launch Lab` link below and a new codespace will open. The CodeSpace will be an embedded VSCode with Jupyter Notebook pre-configured and ready to go.
+
+> Note: It may take a few moments for Python to be ready.  Once the Lab is ready open the `0_welcome.ipynb` file to begin the lab.
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/jedi4ever/agents-workshop-for-dev-sec-ops)
