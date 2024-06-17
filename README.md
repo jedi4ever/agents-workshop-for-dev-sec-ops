@@ -19,3 +19,7 @@ We'll be asking agents powered by LLMs to create bash script.
 
 - The notebooks assume you are using OpenAI
 - and it needs the ENV VAR `OPENAI_API_KEY` set. (create a .env file for example when using VSCode )
+
+## GitHub CodeSpaces
+
+To keep things as simple as possible you can run this workshop in GitHub CodeSpaces.  Simply hit the `.` key and a new codespace will open. The CodeSpace will be an embedded VSCode with Jupyter Notebook pre-configured and ready to go.
